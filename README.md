@@ -34,3 +34,16 @@ Getting Started
 ---------------
 
 1. Download and run the app.
+
+Links found during the codelab
+------------------------------
+
+[Room](https://developer.android.com/topic/libraries/architecture/room)
+[Data entities](https://developer.android.com/training/data-storage/room/defining-data)
+[Data access objects (DAOs)](https://developer.android.com/training/data-storage/room/accessing-data)
+[Database class](https://developer.android.com/reference/kotlin/androidx/room/Database)
+[Entity](https://developer.android.com/reference/androidx/room/Entity)
+[Primary key](https://developer.android.com/reference/androidx/room/PrimaryKey)
+[Single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle)
+[onConflictStrategy](https://developer.android.com/reference/androidx/room/OnConflictStrategy.html)
+[RoomDatabase](https://developer.android.com/reference/androidx/room/RoomDatabase)
