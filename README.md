@@ -48,6 +48,9 @@ Links found during the codelab
 [onConflictStrategy](https://developer.android.com/reference/androidx/room/OnConflictStrategy.html)
 [RoomDatabase](https://developer.android.com/reference/androidx/room/RoomDatabase)
 [Database Inspector](https://developer.android.com/studio/inspect/database)
+[Class extension](https://kotlinlang.org/docs/extensions.html)
+[asLiveData](https://developer.android.com/reference/kotlin/androidx/lifecycle/package-summary#aslivedata)
+[copy](https://kotlinlang.org/docs/data-classes.html#copying)
 
 Learn more
 ----------
@@ -55,6 +58,11 @@ Android Developer Documentation
 - [Save data in a local database using Room](https://developer.android.com/training/data-storage/room)
 - [androidx.room](https://developer.android.com/reference/androidx/room/package-summary)
 - [7 Pro-tips for Room](https://medium.com/androiddevelopers/7-pro-tips-for-room-fbadea4bfbd1)
+- [Pass data between destinations](https://developer.android.com/guide/navigation/navigation-pass-data)
+- [Android String](https://developer.android.com/reference/java/lang/String#format(java.lang.String,%20java.lang.Object...))
+- [Android Formatter](https://developer.android.com/reference/java/util/Formatter)
+- [Debug your database with the Database Inspector](https://developer.android.com/studio/inspect/database)
+- [Save data in a local database using Room](https://developer.android.com/training/data-storage/room)
 
 Blog Posts
 - [The one and only object. Kotlin Vocabulary](https://medium.com/androiddevelopers/the-one-and-only-object-5dfd2cf7ab9b)
