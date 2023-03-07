@@ -57,7 +57,14 @@ class ItemDetailFragment : Fragment() {
         return binding.root
     }
 
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val id = navigationArgs.itemId
+        viewModel.retrieveItem(id).observe(this.viewLifecycleOwner) { selectedItem ->
+            item = selectedItem
+            bind(item)
+        }
+    }
     fun bind(item: Item) {
         binding.apply {
             binding.itemName.text = item.itemName
