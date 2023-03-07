@@ -47,3 +47,24 @@ Links found during the codelab
 [Single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle)
 [onConflictStrategy](https://developer.android.com/reference/androidx/room/OnConflictStrategy.html)
 [RoomDatabase](https://developer.android.com/reference/androidx/room/RoomDatabase)
+[Database Inspector](https://developer.android.com/studio/inspect/database)
+
+Learn more
+----------
+Android Developer Documentation
+- [Save data in a local database using Room](https://developer.android.com/training/data-storage/room)
+- [androidx.room](https://developer.android.com/reference/androidx/room/package-summary)
+- [7 Pro-tips for Room](https://medium.com/androiddevelopers/7-pro-tips-for-room-fbadea4bfbd1)
+
+Blog Posts
+- [The one and only object. Kotlin Vocabulary](https://medium.com/androiddevelopers/the-one-and-only-object-5dfd2cf7ab9b)
+- [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+
+Videos
+- [Kotlin: Using Room Kotlin APIs](https://www.youtube.com/watch?v=vsDkhRTMdA0)
+- [Database inspector](https://www.youtube.com/watch?v=UMc7Tu0nKYQ)
+
+Other Documentation And Articles
+- [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+- [Companion objects](https://kotlinlang.org/docs/reference/object-declarations.html)
+- [SQLite Tutorial - An Easy Way To Master SQLite Faster](https://www.sqlitetutorial.net/)
