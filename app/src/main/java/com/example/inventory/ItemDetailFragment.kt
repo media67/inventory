@@ -22,8 +22,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.inventory.data.Item
 import com.example.inventory.databinding.FragmentItemDetailBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -31,6 +33,13 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
  * [ItemDetailFragment] displays the details of the selected item.
  */
 class ItemDetailFragment : Fragment() {
+    private val viewModel: InventoryViewModel by activityViewModels {
+        InventoryViewModelFactory(
+            (activity?.application as InventoryApplication).database.itemDao()
+        )
+    }
+
+    lateinit var item: Item
     private val navigationArgs: ItemDetailFragmentArgs by navArgs()
 
     private var _binding: FragmentItemDetailBinding? = null
