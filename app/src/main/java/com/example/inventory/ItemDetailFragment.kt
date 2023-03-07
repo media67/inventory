@@ -82,6 +82,7 @@ class ItemDetailFragment : Fragment() {
             getString(R.string.edit_fragment_title),
             item.id
         )
+        this.findNavController().navigate(action)
     }
 
     /**
