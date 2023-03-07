@@ -73,7 +73,15 @@ class ItemDetailFragment : Fragment() {
             sellItem.isEnabled = viewModel.isStockAvailable(item)
             sellItem.setOnClickListener { viewModel.sellItem(item) }
             deleteItem.setOnClickListener { showConfirmationDialog() }
+            editItem.setOnClickListener { editItem() }
         }
+    }
+
+    private fun editItem() {
+        val action = ItemDetailFragmentDirections.actionItemDetailFragmentToAddItemFragment(
+            getString(R.string.edit_fragment_title),
+            item.id
+        )
     }
 
     /**
