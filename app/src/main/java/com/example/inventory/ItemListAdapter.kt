@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.inventory.data.Item
+import com.example.inventory.data.getFormattedPrice
 import com.example.inventory.databinding.ItemListItemBinding
 
 /**
@@ -14,6 +15,8 @@ import com.example.inventory.databinding.ItemListItemBinding
 
 class ItemListAdapter(private val onItemClicked: (Item) -> Unit) :
     ListAdapter<Item, ItemListAdapter.ItemViewHolder>(DiffCallback) {
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         return ItemViewHolder(
@@ -37,8 +40,13 @@ class ItemListAdapter(private val onItemClicked: (Item) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Item) {
-
+            binding.apply {
+                itemName.text = item.itemName
+                itemPrice.text = item.getFormattedPrice()
+                itemQuantity.text = item.quantityInStock.toString()
+            }
         }
+
     }
 
     companion object {
@@ -52,4 +60,5 @@ class ItemListAdapter(private val onItemClicked: (Item) -> Unit) :
             }
         }
     }
+
 }
